@@ -2,10 +2,12 @@ package org.ui.model.person;
 
 public class Professor extends Person{
     private String department;
+    private String major;
 
-    public Professor(String name, int age, String department) {
+    public Professor(String name, int age, String department,String major) {
         super(name, age);
         this.department = department;
+        this.major = major;
     }
 
     public String getDepartment() {
